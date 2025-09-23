@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oasis Talent Group</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="antialiased bg-gray-50">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-[#F4A300]/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <img src="img/Oasis.png" alt="Oasis Talent Group" class="h-10 w-auto">
+        </div>
+
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#home" class="text-gray-700 hover:text-[#2B9CC9] font-medium transition">Home</a>
+          <a href="#creators" class="text-gray-700 hover:text-[#2B9CC9] font-medium transition">Creators</a>
+          <a href="#brands" class="text-gray-700 hover:text-[#2B9CC9] font-medium transition">Brands</a>
+          <a href="#services" class="text-gray-700 hover:text-[#2B9CC9] font-medium transition">Services</a>
+          <a href="#about" class="text-gray-700 hover:text-[#2B9CC9] font-medium transition">About Us</a>
+        </div>
+
+        <!-- Apply Now Button -->
+        <div class="hidden md:flex">
+          <a href="#apply" class="bg-white text-[#F4A300] border border-[#F4A300] hover:bg-[#F4A300] hover:text-white transition rounded-full px-6 py-2">
+            Apply Now
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-gray-700 hover:text-[#F4A300] transition">
+            <!-- Menu Icon -->
+            <svg id="menu-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+            <!-- Close Icon -->
+            <svg id="menu-close" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-200">
+          <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-[#F4A300]">Home</a>
+          <a href="#creators" class="block px-3 py-2 text-gray-700 hover:text-[#F4A300]">Creators</a>
+          <a href="#brands" class="block px-3 py-2 text-gray-700 hover:text-[#F4A300]">Brands</a>
+          <a href="#services" class="block px-3 py-2 text-gray-700 hover:text-[#F4A300]">Services</a>
+          <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-[#F4A300]">About Us</a>
+          <div class="px-3 py-2">
+            <a href="#apply" class="w-full block text-center bg-[#F4A300] text-white hover:bg-[#e69500] rounded-full py-2">Apply Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Spacer so content is visible -->
+  <div class="h-20"></div>
+
+  <!-- Footer -->
+  <footer class="bg-[#3C2F2F] text-white mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Logo + Description -->
+        <div class="lg:col-span-2">
+          <div class="flex items-center mb-6">
+            <img src="example.png" alt="Oasis Talent Group" class="h-12 w-auto">
+          </div>
+          <p class="text-gray-300 mb-6 max-w-md leading-relaxed">
+            Connecting extraordinary talent with visionary brands to create authentic partnerships that drive meaningful engagement and sustainable growth.
+          </p>
+          <div class="flex space-x-4">
+            <!-- Instagram -->
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#2B9CC9] transition">
+              <svg class="h-5 w-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H7c-1.65 0-3-1.35-3-3V7c0-1.65 1.35-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-.25a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z"/></svg>
+            </a>
+            <!-- Twitter -->
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#2B9CC9] transition">
+              <svg class="h-5 w-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0022.4.36a9.09 9.09 0 01-2.88 1.1A4.52 4.52 0 0016.11 0c-2.63 0-4.77 2.13-4.77 4.77 0 .37.04.74.12 1.09A12.84 12.84 0 013 1.67a4.76 4.76 0 00-.65 2.4c0 1.65.84 3.11 2.11 3.97a4.48 4.48 0 01-2.16-.6v.06c0 2.3 1.64 4.22 3.81 4.66a4.52 4.52 0 01-2.14.08c.6 1.86 2.34 3.22 4.4 3.26A9.05 9.05 0 012 19.54 12.77 12.77 0 008.29 21c7.55 0 11.68-6.26 11.68-11.68 0-.18 0-.36-.01-.54A8.36 8.36 0 0023 3z"/></svg>
+            </a>
+            <!-- YouTube -->
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#2B9CC9] transition">
+              <svg class="h-5 w-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M10 15l5.19-3L10 9v6zm12-3c0-2.2-.2-3.5-.34-4.2a2.9 2.9 0 00-2-2C18.4 5.5 12 5.5 12 5.5s-6.4 0-7.66.3a2.9 2.9 0 00-2 2C2.2 8.5 2 9.8 2 12s.2 3.5.34 4.2a2.9 2.9 0 002 2c1.26.3 7.66.3 7.66.3s6.4 0 7.66-.3a2.9 2.9 0 002-2c.14-.7.34-2 .34-4.2z"/></svg>
+            </a>
+            <!-- LinkedIn -->
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#2B9CC9] transition">
+              <svg class="h-5 w-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M4.98 3.5A2.5 2.5 0 012.5 6a2.5 2.5 0 112.48-2.5zM2 9h6v12H2V9zm7 0h5.6v1.71h.08c.78-1.4 2.68-2.88 5.52-2.88C23.41 7.83 24 10.22 24 13.9V21h-6v-6.4c0-1.52-.02-3.48-2.12-3.48-2.12 0-2.44 1.66-2.44 3.36V21h-6V9z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div>
+          <h3 class="text-lg mb-6">Quick Links</h3>
+          <ul class="space-y-3">
+            <li><a href="#home" class="text-gray-300 hover:text-[#2B9CC9]">Home</a></li>
+            <li><a href="#creators" class="text-gray-300 hover:text-[#2B9CC9]">Creators</a></li>
+            <li><a href="#brands" class="text-gray-300 hover:text-[#2B9CC9]">Brands</a></li>
+            <li><a href="#services" class="text-gray-300 hover:text-[#2B9CC9]">Services</a></li>
+            <li><a href="#about" class="text-gray-300 hover:text-[#2B9CC9]">About Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h3 class="text-lg mb-6">Contact Info</h3>
+          <ul class="space-y-4">
+            <li class="flex items-center space-x-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail h-5 w-5 text-[#F4A300] flex-shrink-0" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>              <span class="text-gray-300">hello@oasistalent.com</span>
+            </li>
+            <li class="flex items-center space-x-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-5 w-5 text-[#F4A300] flex-shrink-0" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>              <span class="text-gray-300">+1 (555) 123-4567</span>
+            </li>
+            <li class="flex items-center space-x-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin h-5 w-5 text-[#F4A300] flex-shrink-0" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>              <span class="text-gray-300">Los Angeles, California</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Section -->
+      <div class="border-t border-gray-600 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <div class="text-gray-400 text-sm mb-4 md:mb-0">
+          © 2025 Oasis Talent Group. All rights reserved.
+        </div>
+        <div class="flex space-x-6 text-sm">
+          <a href="#" class="text-gray-400 hover:text-[#2B9CC9]">Privacy Policy</a>
+          <a href="#" class="text-gray-400 hover:text-[#2B9CC9]">Terms of Service</a>
+          <a href="#" class="text-gray-400 hover:text-[#2B9CC9]">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+    <div class="h-1 bg-gradient-to-r from-[#F4A300] via-[#2B9CC9] to-[#F4A300]"></div>
+  </footer>
+
+  <script>
+    // simple mobile toggle
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+    const openIcon = document.getElementById('menu-open');
+    const closeIcon = document.getElementById('menu-close');
+
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+      openIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

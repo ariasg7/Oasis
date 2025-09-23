@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oasis Talent Group</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon (tab icon) -->
+  <link rel="icon" href="img/Oasis.png" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+  <!-- Apple Touch Icon (iOS / iMessage) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/Oasis.png">
+
+  <!-- Open Graph / Twitter Card -->
+  <meta property="og:title" content="Oasis Talent Group">
+  <meta property="og:description" content="Connecting extraordinary talent with visionary brands.">
+  <meta property="og:image" content="img/social-preview.png">
+  <meta property="og:url" content="https://www.yourwebsite.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Oasis Talent Group">
+  <meta name="twitter:description" content="Connecting extraordinary talent with visionary brands.">
+
+  <style>
+    html {
+  scroll-behavior: smooth;
+}
+
+  </style>
+  <meta name="twitter:image" content="img/social-preview.png">
+</head>
+<body class="antialiased bg-gray-50">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-[#F4A300]/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <div class="flex items-center">
+        <img src="img/Oasis.png" alt="Oasis Talent Group" class="h-[60px] w-[60px] rounded-full">
+        </div>
+
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#home" class="text-gray-700 hover:text-[#2B9CC9] font-medium transition">Home</a>
+          <a href="#creators" class="text-gray-700 hover:text-[#2B9CC9] font-medium transition">Creators</a>
+          <a href="#brands" class="text-gray-700 hover:text-[#2B9CC9] font-medium transition">Brands</a>
+          <a href="#services" class="text-gray-700 hover:text-[#2B9CC9] font-medium transition">Services</a>
+          <a href="#about" class="text-gray-700 hover:text-[#2B9CC9] font-medium transition">About Us</a>
+        </div>
+
+        <!-- Apply Now Button -->
+        <div class="hidden md:flex">
+          <a href="#about" class="bg-white text-[#F4A300] border border-[#F4A300] hover:bg-[#F4A300] hover:text-white transition rounded-full px-6 py-2">
+            Apply Now
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-gray-700 hover:text-[#F4A300] transition">
+            <!-- Menu Icon -->
+            <svg id="menu-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+            <!-- Close Icon -->
+            <svg id="menu-close" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-200">
+          <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-[#F4A300]">Home</a>
+          <a href="#creators" class="block px-3 py-2 text-gray-700 hover:text-[#F4A300]">Creators</a>
+          <a href="#brands" class="block px-3 py-2 text-gray-700 hover:text-[#F4A300]">Brands</a>
+          <a href="#services" class="block px-3 py-2 text-gray-700 hover:text-[#F4A300]">Services</a>
+          <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-[#F4A300]">About Us</a>
+          <div class="px-3 py-2">
+            <a href="#about" class="w-full block text-center bg-[#F4A300] text-white hover:bg-[#e69500] rounded-full py-2">Apply Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+<!--HERO-->
+<section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 md:pt-0">
+    <!-- Animated gradient background -->
+    <div class="absolute inset-0 bg-gradient-to-br from-[#F4A300] via-[#ffb733] to-[#ff8c00] animate-pulse"></div>
+
+    <!-- Subtle shimmer overlay -->
+    <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-[shimmer_3s_linear_infinite]"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+      <h1 class="text-5xl md:text-7xl lg:text-8xl text-white font-['Poppins'] mb-6">
+        Where Talent Meets Opportunity
+      </h1>
+
+      <p class="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto font-['Poppins']">
+        We partner with visionary teams to build standout brands, launch smarter products, and grow with purpose.
+      </p>
+
+      <a href="#work" class="inline-flex items-center bg-white text-[#F4A300] hover:bg-gray-100 text-lg px-8 py-3 rounded-full font-medium group transition-all duration-300 shadow-lg hover:shadow-xl">
+        Work With Us
+        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+
+      <!-- Metrics Bar -->
+      <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-white">
+        <div class="text-center">
+          <div class="text-3xl font-bold">100+</div>
+          <div class="text-sm opacity-90">Brand Partnerships Secured</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold">50+</div>
+          <div class="text-sm opacity-90">Talents Represented</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold">1M+</div>
+          <div class="text-sm opacity-90">Audience Reach Across Platforms</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold">25K+</div>
+          <div class="text-sm opacity-90">Campaign Engagements Delivered</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Decorative gradient overlay at bottom -->
+    <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black/20 to-transparent"></div>
+  </section>
+<!--Featured Creators-->
+<section id="creators" class="py-20 bg-[#FFF9F1]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Heading -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-['Poppins'] text-gray-900 mb-4">
+        Featured Creators
+      </h2>
+      <p class="text-xl text-gray-600 max-w-2xl mx-auto font-['Poppins']">
+        Discover the talented individuals who are shaping the future of digital content
+      </p>
+    </div>
+
+    <!-- Creators Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1 -->
+      <div class="bg-white rounded-3xl p-6 shadow-lg border-2 border-[#F4A300]/20 hover:border-[#F4A300] transition-all duration-300 group cursor-pointer">
+        <div class="relative mb-4">
+          <img src="contentCreators/thuggerthugger.png" alt="Young Thug" class="w-full h-64 object-cover rounded-2xl" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-2xl"></div>
+        </div>
+        <div class="text-center">
+          <h3 class="text-xl font-['Poppins'] text-gray-900 mb-3">Young Thug</h3>
+          <div class="space-y-2 mb-4">
+            <div class="flex items-center justify-center space-x-2 text-gray-600">
+                <!-- TikTok Logo SVG (small, h-4 w-4) -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 293768 333327" class="h-4 w-4">
+                <path d="M204958 0c5369 45832 32829 78170 77253 81022v43471l-287 27V87593c-44424-2850-69965-30183-75333-76015l-47060-1v192819c6791 86790-60835 89368-86703 56462 30342 18977 79608 6642 73766-68039V0h58365zM78515 319644c-26591-5471-50770-21358-64969-44588-34496-56437-3401-148418 96651-157884v54345l-164 27v-40773C17274 145544 7961 245185 33650 286633c9906 15984 26169 27227 44864 33011z" fill="#26f4ee"/>
+                <path d="M218434 11587c3505 29920 15609 55386 35948 70259-27522-10602-43651-34934-47791-70262l11843 3zm63489 82463c3786 804 7734 1348 11844 1611v51530c-25770 2537-48321-5946-74600-21749l4034 88251c0 28460 106 41467-15166 67648-34260 58734-95927 63376-137628 35401 54529 22502 137077-4810 136916-103049v-96320c26279 15803 48830 24286 74600 21748V94050zm-171890 37247c5390-1122 11048-1985 16998-2548v54345c-21666 3569-35427 10222-41862 22528-20267 38754 5827 69491 35017 74111-33931 5638-73721-28750-49999-74111 6434-12304 18180-18959 39846-22528v-51797zm64479-119719h1808-1808z" fill="#fb2c53"/>
+                <path d="M206590 11578c5369 45832 30910 73164 75333 76015v51528c-25770 2539-48321-5945-74600-21748v96320c206 125717-135035 135283-173673 72939-25688-41449-16376-141089 76383-155862v52323c-21666 3569-33412 10224-39846 22528-39762 76035 98926 121273 89342-1225V11577l47060 1z"/>
+                </svg>
+              <span class="text-sm">@thuggerthugger1</span>
+              <span class="text-sm font-medium">1.5M</span>
+            </div>
+            <div class="flex items-center justify-center space-x-2 text-gray-600">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9zm9.25 2.75a.75.75 0 1 1 0 1.5h-1.5a.75.75 0 0 1 0-1.5h1.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>
+              <span class="text-sm">@thuggerthugger1</span>
+              <span class="text-sm font-medium">10M</span>
+            </div>
+          </div>
+          <div class="w-full h-1 bg-gray-200 rounded-full overflow-hidden">
+            <div class="h-full bg-gradient-to-r from-[#F4A300] to-[#ff8c00] w-full"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="bg-white rounded-3xl p-6 shadow-lg border-2 border-[#F4A300]/20 hover:border-[#F4A300] transition-all duration-300 group cursor-pointer">
+        <div class="relative mb-4">
+          <img src="contentCreators/Gunna.jpg" alt="Gunna" class="w-full h-64 object-cover rounded-2xl" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-2xl"></div>
+        </div>
+        <div class="text-center">
+          <h3 class="text-xl font-['Poppins'] text-gray-900 mb-3">Gunna</h3>
+          <div class="space-y-2 mb-4">
+            <div class="flex items-center justify-center space-x-2 text-gray-600">
+                <!-- TikTok Logo SVG (small, h-4 w-4) -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 293768 333327" class="h-4 w-4">
+                <path d="M204958 0c5369 45832 32829 78170 77253 81022v43471l-287 27V87593c-44424-2850-69965-30183-75333-76015l-47060-1v192819c6791 86790-60835 89368-86703 56462 30342 18977 79608 6642 73766-68039V0h58365zM78515 319644c-26591-5471-50770-21358-64969-44588-34496-56437-3401-148418 96651-157884v54345l-164 27v-40773C17274 145544 7961 245185 33650 286633c9906 15984 26169 27227 44864 33011z" fill="#26f4ee"/>
+                <path d="M218434 11587c3505 29920 15609 55386 35948 70259-27522-10602-43651-34934-47791-70262l11843 3zm63489 82463c3786 804 7734 1348 11844 1611v51530c-25770 2537-48321-5946-74600-21749l4034 88251c0 28460 106 41467-15166 67648-34260 58734-95927 63376-137628 35401 54529 22502 137077-4810 136916-103049v-96320c26279 15803 48830 24286 74600 21748V94050zm-171890 37247c5390-1122 11048-1985 16998-2548v54345c-21666 3569-35427 10222-41862 22528-20267 38754 5827 69491 35017 74111-33931 5638-73721-28750-49999-74111 6434-12304 18180-18959 39846-22528v-51797zm64479-119719h1808-1808z" fill="#fb2c53"/>
+                <path d="M206590 11578c5369 45832 30910 73164 75333 76015v51528c-25770 2539-48321-5945-74600-21748v96320c206 125717-135035 135283-173673 72939-25688-41449-16376-141089 76383-155862v52323c-21666 3569-33412 10224-39846 22528-39762 76035 98926 121273 89342-1225V11577l47060 1z"/>
+                </svg>
+              <span class="text-sm">@gunna</span>
+              <span class="text-sm font-medium">2.6M</span>
+            </div>
+            <div class="flex items-center justify-center space-x-2 text-gray-600">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9zm9.25 2.75a.75.75 0 1 1 0 1.5h-1.5a.75.75 0 0 1 0-1.5h1.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>
+              <span class="text-sm">@gunna</span>
+              <span class="text-sm font-medium">5.7M</span>
+            </div>
+          </div>
+          <div class="w-full h-1 bg-gray-200 rounded-full overflow-hidden">
+            <div class="h-full bg-gradient-to-r from-[#F4A300] to-[#ff8c00] w-full"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="bg-white rounded-3xl p-6 shadow-lg border-2 border-[#F4A300]/20 hover:border-[#F4A300] transition-all duration-300 group cursor-pointer">
+        <div class="relative mb-4">
+          <img src="contentCreators/Bryce Xavier.jpg" alt="Bryce Xavier" class="w-full h-64 object-cover rounded-2xl" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-2xl"></div>
+        </div>
+        <div class="text-center">
+          <h3 class="text-xl font-['Poppins'] text-gray-900 mb-3">Bryce Xavier</h3>
+          <div class="space-y-2 mb-4">
+            <div class="flex items-center justify-center space-x-2 text-gray-600">
+                <!-- TikTok Logo SVG (small, h-4 w-4) -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 293768 333327" class="h-4 w-4">
+                <path d="M204958 0c5369 45832 32829 78170 77253 81022v43471l-287 27V87593c-44424-2850-69965-30183-75333-76015l-47060-1v192819c6791 86790-60835 89368-86703 56462 30342 18977 79608 6642 73766-68039V0h58365zM78515 319644c-26591-5471-50770-21358-64969-44588-34496-56437-3401-148418 96651-157884v54345l-164 27v-40773C17274 145544 7961 245185 33650 286633c9906 15984 26169 27227 44864 33011z" fill="#26f4ee"/>
+                <path d="M218434 11587c3505 29920 15609 55386 35948 70259-27522-10602-43651-34934-47791-70262l11843 3zm63489 82463c3786 804 7734 1348 11844 1611v51530c-25770 2537-48321-5946-74600-21749l4034 88251c0 28460 106 41467-15166 67648-34260 58734-95927 63376-137628 35401 54529 22502 137077-4810 136916-103049v-96320c26279 15803 48830 24286 74600 21748V94050zm-171890 37247c5390-1122 11048-1985 16998-2548v54345c-21666 3569-35427 10222-41862 22528-20267 38754 5827 69491 35017 74111-33931 5638-73721-28750-49999-74111 6434-12304 18180-18959 39846-22528v-51797zm64479-119719h1808-1808z" fill="#fb2c53"/>
+                <path d="M206590 11578c5369 45832 30910 73164 75333 76015v51528c-25770 2539-48321-5945-74600-21748v96320c206 125717-135035 135283-173673 72939-25688-41449-16376-141089 76383-155862v52323c-21666 3569-33412 10224-39846 22528-39762 76035 98926 121273 89342-1225V11577l47060 1z"/>
+                </svg>
+              <span class="text-sm">@brycexavier</span>
+              <span class="text-sm font-medium">3.3M</span>
+            </div>
+            <div class="flex items-center justify-center space-x-2 text-gray-600">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9zm9.25 2.75a.75.75 0 1 1 0 1.5h-1.5a.75.75 0 0 1 0-1.5h1.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>
+              <span class="text-sm">@treysongz</span>
+              <span class="text-sm font-medium">14.7M</span>
+            </div>
+          </div>
+          <div class="w-full h-1 bg-gray-200 rounded-full overflow-hidden">
+            <div class="h-full bg-gradient-to-r from-[#F4A300] to-[#ff8c00] w-full"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="bg-white rounded-3xl p-6 shadow-lg border-2 border-[#F4A300]/20 hover:border-[#F4A300] transition-all duration-300 group cursor-pointer">
+        <div class="relative mb-4">
+          <img src="contentCreators/Nick Kratka.jpg" alt="Nick Kratka" class="w-full h-64 object-cover rounded-2xl" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-2xl"></div>
+        </div>
+        <div class="text-center">
+          <h3 class="text-xl font-['Poppins'] text-gray-900 mb-3">Nicholas Kratka</h3>
+          <div class="space-y-2 mb-4">
+            <div class="flex items-center justify-center space-x-2 text-gray-600">
+                <!-- TikTok Logo SVG (small, h-4 w-4) -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 293768 333327" class="h-4 w-4">
+                <path d="M204958 0c5369 45832 32829 78170 77253 81022v43471l-287 27V87593c-44424-2850-69965-30183-75333-76015l-47060-1v192819c6791 86790-60835 89368-86703 56462 30342 18977 79608 6642 73766-68039V0h58365zM78515 319644c-26591-5471-50770-21358-64969-44588-34496-56437-3401-148418 96651-157884v54345l-164 27v-40773C17274 145544 7961 245185 33650 286633c9906 15984 26169 27227 44864 33011z" fill="#26f4ee"/>
+                <path d="M218434 11587c3505 29920 15609 55386 35948 70259-27522-10602-43651-34934-47791-70262l11843 3zm63489 82463c3786 804 7734 1348 11844 1611v51530c-25770 2537-48321-5946-74600-21749l4034 88251c0 28460 106 41467-15166 67648-34260 58734-95927 63376-137628 35401 54529 22502 137077-4810 136916-103049v-96320c26279 15803 48830 24286 74600 21748V94050zm-171890 37247c5390-1122 11048-1985 16998-2548v54345c-21666 3569-35427 10222-41862 22528-20267 38754 5827 69491 35017 74111-33931 5638-73721-28750-49999-74111 6434-12304 18180-18959 39846-22528v-51797zm64479-119719h1808-1808z" fill="#fb2c53"/>
+                <path d="M206590 11578c5369 45832 30910 73164 75333 76015v51528c-25770 2539-48321-5945-74600-21748v96320c206 125717-135035 135283-173673 72939-25688-41449-16376-141089 76383-155862v52323c-21666 3569-33412 10224-39846 22528-39762 76035 98926 121273 89342-1225V11577l47060 1z"/>
+                </svg>
+              <span class="text-sm">@nick_kratka</span>
+              <span class="text-sm font-medium">8.3M</span>
+            </div>
+            <div class="flex items-center justify-center space-x-2 text-gray-600">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9zm9.25 2.75a.75.75 0 1 1 0 1.5h-1.5a.75.75 0 0 1 0-1.5h1.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>
+              <span class="text-sm">@nick_kratka</span>
+              <span class="text-sm font-medium">826k</span>
+            </div>
+          </div>
+          <div class="w-full h-1 bg-gray-200 rounded-full overflow-hidden">
+            <div class="h-full bg-gradient-to-r from-[#F4A300] to-[#ff8c00] w-full"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="bg-white rounded-3xl p-6 shadow-lg border-2 border-[#F4A300]/20 hover:border-[#F4A300] transition-all duration-300 group cursor-pointer">
+        <div class="relative mb-4">
+          <img src="contentCreators/AceGreene.webp" alt="Ace Greene" class="w-full h-64 object-cover rounded-2xl" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-2xl"></div>
+        </div>
+        <div class="text-center">
+          <h3 class="text-xl font-['Poppins'] text-gray-900 mb-3">Ace</h3>
+          <div class="space-y-2 mb-4">
+            <div class="flex items-center justify-center space-x-2 text-gray-600">
+                <!-- TikTok Logo SVG (small, h-4 w-4) -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 293768 333327" class="h-4 w-4">
+                <path d="M204958 0c5369 45832 32829 78170 77253 81022v43471l-287 27V87593c-44424-2850-69965-30183-75333-76015l-47060-1v192819c6791 86790-60835 89368-86703 56462 30342 18977 79608 6642 73766-68039V0h58365zM78515 319644c-26591-5471-50770-21358-64969-44588-34496-56437-3401-148418 96651-157884v54345l-164 27v-40773C17274 145544 7961 245185 33650 286633c9906 15984 26169 27227 44864 33011z" fill="#26f4ee"/>
+                <path d="M218434 11587c3505 29920 15609 55386 35948 70259-27522-10602-43651-34934-47791-70262l11843 3zm63489 82463c3786 804 7734 1348 11844 1611v51530c-25770 2537-48321-5946-74600-21749l4034 88251c0 28460 106 41467-15166 67648-34260 58734-95927 63376-137628 35401 54529 22502 137077-4810 136916-103049v-96320c26279 15803 48830 24286 74600 21748V94050zm-171890 37247c5390-1122 11048-1985 16998-2548v54345c-21666 3569-35427 10222-41862 22528-20267 38754 5827 69491 35017 74111-33931 5638-73721-28750-49999-74111 6434-12304 18180-18959 39846-22528v-51797zm64479-119719h1808-1808z" fill="#fb2c53"/>
+                <path d="M206590 11578c5369 45832 30910 73164 75333 76015v51528c-25770 2539-48321-5945-74600-21748v96320c206 125717-135035 135283-173673 72939-25688-41449-16376-141089 76383-155862v52323c-21666 3569-33412 10224-39846 22528-39762 76035 98926 121273 89342-1225V11577l47060 1z"/>
+                </svg>
+              <span class="text-sm">NA</span>
+              <span class="text-sm font-medium">N/A</span>
+            </div>
+            <div class="flex items-center justify-center space-x-2 text-gray-600">
+                <!-- TikTok Logo SVG (small, h-4 w-4) -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 293768 333327" class="h-4 w-4">
+                <path d="M204958 0c5369 45832 32829 78170 77253 81022v43471l-287 27V87593c-44424-2850-69965-30183-75333-76015l-47060-1v192819c6791 86790-60835 89368-86703 56462 30342 18977 79608 6642 73766-68039V0h58365zM78515 319644c-26591-5471-50770-21358-64969-44588-34496-56437-3401-148418 96651-157884v54345l-164 27v-40773C17274 145544 7961 245185 33650 286633c9906 15984 26169 27227 44864 33011z" fill="#26f4ee"/>
+                <path d="M218434 11587c3505 29920 15609 55386 35948 70259-27522-10602-43651-34934-47791-70262l11843 3zm63489 82463c3786 804 7734 1348 11844 1611v51530c-25770 2537-48321-5946-74600-21749l4034 88251c0 28460 106 41467-15166 67648-34260 58734-95927 63376-137628 35401 54529 22502 137077-4810 136916-103049v-96320c26279 15803 48830 24286 74600 21748V94050zm-171890 37247c5390-1122 11048-1985 16998-2548v54345c-21666 3569-35427 10222-41862 22528-20267 38754 5827 69491 35017 74111-33931 5638-73721-28750-49999-74111 6434-12304 18180-18959 39846-22528v-51797zm64479-119719h1808-1808z" fill="#fb2c53"/>
+                <path d="M206590 11578c5369 45832 30910 73164 75333 76015v51528c-25770 2539-48321-5945-74600-21748v96320c206 125717-135035 135283-173673 72939-25688-41449-16376-141089 76383-155862v52323c-21666 3569-33412 10224-39846 22528-39762 76035 98926 121273 89342-1225V11577l47060 1z"/>
+                </svg>
+              <span class="text-sm">@realacegreene</span>
+              <span class="text-sm font-medium">2M</span>
+            </div>
+          </div>
+          <div class="w-full h-1 bg-gray-200 rounded-full overflow-hidden">
+            <div class="h-full bg-gradient-to-r from-[#F4A300] to-[#ff8c00] w-full"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="bg-white rounded-3xl p-6 shadow-lg border-2 border-[#F4A300]/20 hover:border-[#F4A300] transition-all duration-300 group cursor-pointer">
+        <div class="relative mb-4">
+          <img src="contentCreators/SeanDoesMagic.jpg" alt="SeanDoesMagic" class="w-full h-64 object-cover rounded-2xl" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-2xl"></div>
+        </div>
+        <div class="text-center">
+          <h3 class="text-xl font-['Poppins'] text-gray-900 mb-3">SeanDoesMagic</h3>
+          <div class="space-y-2 mb-4">
+            <div class="flex items-center justify-center space-x-2 text-gray-600">
+                <!-- TikTok Logo SVG (small, h-4 w-4) -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 293768 333327" class="h-4 w-4">
+                <path d="M204958 0c5369 45832 32829 78170 77253 81022v43471l-287 27V87593c-44424-2850-69965-30183-75333-76015l-47060-1v192819c6791 86790-60835 89368-86703 56462 30342 18977 79608 6642 73766-68039V0h58365zM78515 319644c-26591-5471-50770-21358-64969-44588-34496-56437-3401-148418 96651-157884v54345l-164 27v-40773C17274 145544 7961 245185 33650 286633c9906 15984 26169 27227 44864 33011z" fill="#26f4ee"/>
+                <path d="M218434 11587c3505 29920 15609 55386 35948 70259-27522-10602-43651-34934-47791-70262l11843 3zm63489 82463c3786 804 7734 1348 11844 1611v51530c-25770 2537-48321-5946-74600-21749l4034 88251c0 28460 106 41467-15166 67648-34260 58734-95927 63376-137628 35401 54529 22502 137077-4810 136916-103049v-96320c26279 15803 48830 24286 74600 21748V94050zm-171890 37247c5390-1122 11048-1985 16998-2548v54345c-21666 3569-35427 10222-41862 22528-20267 38754 5827 69491 35017 74111-33931 5638-73721-28750-49999-74111 6434-12304 18180-18959 39846-22528v-51797zm64479-119719h1808-1808z" fill="#fb2c53"/>
+                <path d="M206590 11578c5369 45832 30910 73164 75333 76015v51528c-25770 2539-48321-5945-74600-21748v96320c206 125717-135035 135283-173673 72939-25688-41449-16376-141089 76383-155862v52323c-21666 3569-33412 10224-39846 22528-39762 76035 98926 121273 89342-1225V11577l47060 1z"/>
+                </svg>
+              <span class="text-sm">@seandoesmagic</span>
+              <span class="text-sm font-medium">22M</span>
+            </div>
+            <div class="flex items-center justify-center space-x-2 text-gray-600">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9zm9.25 2.75a.75.75 0 1 1 0 1.5h-1.5a.75.75 0 0 1 0-1.5h1.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>
+              <span class="text-sm">@seandoesmagic</span>
+              <span class="text-sm font-medium">3.9M</span>
+            </div>
+          </div>
+          <div class="w-full h-1 bg-gray-200 rounded-full overflow-hidden">
+            <div class="h-full bg-gradient-to-r from-[#F4A300] to-[#ff8c00] w-full"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 7 -->
+      <div class="bg-white rounded-3xl p-6 shadow-lg border-2 border-[#F4A300]/20 hover:border-[#F4A300] transition-all duration-300 group cursor-pointer">
+        <div class="relative mb-4">
+          <img src="contentCreators/Natalie Gibson.jpg" alt="Natalie Gibson" class="w-full h-64 object-cover rounded-2xl" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-2xl"></div>
+        </div>
+        <div class="text-center">
+          <h3 class="text-xl font-['Poppins'] text-gray-900 mb-3">Natalie Gibson</h3>
+          <div class="space-y-2 mb-4">
+            <div class="flex items-center justify-center space-x-2 text-gray-600">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3l14 9-14 9V3z"/></svg>
+              <span class="text-sm">@natngibson</span>
+              <span class="text-sm font-medium">611.3k</span>
+            </div>
+            <div class="flex items-center justify-center space-x-2 text-gray-600">
+                <!-- TikTok Logo SVG (small, h-4 w-4) -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 293768 333327" class="h-4 w-4">
+                <path d="M204958 0c5369 45832 32829 78170 77253 81022v43471l-287 27V87593c-44424-2850-69965-30183-75333-76015l-47060-1v192819c6791 86790-60835 89368-86703 56462 30342 18977 79608 6642 73766-68039V0h58365zM78515 319644c-26591-5471-50770-21358-64969-44588-34496-56437-3401-148418 96651-157884v54345l-164 27v-40773C17274 145544 7961 245185 33650 286633c9906 15984 26169 27227 44864 33011z" fill="#26f4ee"/>
+                <path d="M218434 11587c3505 29920 15609 55386 35948 70259-27522-10602-43651-34934-47791-70262l11843 3zm63489 82463c3786 804 7734 1348 11844 1611v51530c-25770 2537-48321-5946-74600-21749l4034 88251c0 28460 106 41467-15166 67648-34260 58734-95927 63376-137628 35401 54529 22502 137077-4810 136916-103049v-96320c26279 15803 48830 24286 74600 21748V94050zm-171890 37247c5390-1122 11048-1985 16998-2548v54345c-21666 3569-35427 10222-41862 22528-20267 38754 5827 69491 35017 74111-33931 5638-73721-28750-49999-74111 6434-12304 18180-18959 39846-22528v-51797zm64479-119719h1808-1808z" fill="#fb2c53"/>
+                <path d="M206590 11578c5369 45832 30910 73164 75333 76015v51528c-25770 2539-48321-5945-74600-21748v96320c206 125717-135035 135283-173673 72939-25688-41449-16376-141089 76383-155862v52323c-21666 3569-33412 10224-39846 22528-39762 76035 98926 121273 89342-1225V11577l47060 1z"/>
+                </svg>
+              <span class="text-sm">@nataliengibson</span>
+              <span class="text-sm font-medium">960k</span>
+            </div>
+          </div>
+          <div class="w-full h-1 bg-gray-200 rounded-full overflow-hidden">
+            <div class="h-full bg-gradient-to-r from-[#F4A300] to-[#ff8c00] w-full"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 8 -->
+      <div class="bg-white rounded-3xl p-6 shadow-lg border-2 border-[#F4A300]/20 hover:border-[#F4A300] transition-all duration-300 group cursor-pointer">
+        <div class="relative mb-4">
+          <img src="contentCreators/TheSysakTwins.webp" alt="Sysak Twins" class="w-full h-64 object-cover rounded-2xl" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-2xl"></div>
+        </div>
+        <div class="text-center">
+          <h3 class="text-xl font-['Poppins'] text-gray-900 mb-3">The Sysak Twins</h3>
+          <div class="space-y-2 mb-4">
+            <div class="flex items-center justify-center space-x-2 text-gray-600">
+                <!-- TikTok Logo SVG (small, h-4 w-4) -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 293768 333327" class="h-4 w-4">
+                <path d="M204958 0c5369 45832 32829 78170 77253 81022v43471l-287 27V87593c-44424-2850-69965-30183-75333-76015l-47060-1v192819c6791 86790-60835 89368-86703 56462 30342 18977 79608 6642 73766-68039V0h58365zM78515 319644c-26591-5471-50770-21358-64969-44588-34496-56437-3401-148418 96651-157884v54345l-164 27v-40773C17274 145544 7961 245185 33650 286633c9906 15984 26169 27227 44864 33011z" fill="#26f4ee"/>
+                <path d="M218434 11587c3505 29920 15609 55386 35948 70259-27522-10602-43651-34934-47791-70262l11843 3zm63489 82463c3786 804 7734 1348 11844 1611v51530c-25770 2537-48321-5946-74600-21749l4034 88251c0 28460 106 41467-15166 67648-34260 58734-95927 63376-137628 35401 54529 22502 137077-4810 136916-103049v-96320c26279 15803 48830 24286 74600 21748V94050zm-171890 37247c5390-1122 11048-1985 16998-2548v54345c-21666 3569-35427 10222-41862 22528-20267 38754 5827 69491 35017 74111-33931 5638-73721-28750-49999-74111 6434-12304 18180-18959 39846-22528v-51797zm64479-119719h1808-1808z" fill="#fb2c53"/>
+                <path d="M206590 11578c5369 45832 30910 73164 75333 76015v51528c-25770 2539-48321-5945-74600-21748v96320c206 125717-135035 135283-173673 72939-25688-41449-16376-141089 76383-155862v52323c-21666 3569-33412 10224-39846 22528-39762 76035 98926 121273 89342-1225V11577l47060 1z"/>
+                </svg>
+              <span class="text-sm">@thesysaktwins</span>
+              <span class="text-sm font-medium">603.1k</span>
+            </div>
+            <div class="flex items-center justify-center space-x-2 text-gray-600">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9zm9.25 2.75a.75.75 0 1 1 0 1.5h-1.5a.75.75 0 0 1 0-1.5h1.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>
+              <span class="text-sm">@thesysaktwins</span>
+              <span class="text-sm font-medium">112K</span>
+            </div>
+          </div>
+          <div class="w-full h-1 bg-gray-200 rounded-full overflow-hidden">
+            <div class="h-full bg-gradient-to-r from-[#F4A300] to-[#ff8c00] w-full"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 9 -->
+      <div class="bg-white rounded-3xl p-6 shadow-lg border-2 border-[#F4A300]/20 hover:border-[#F4A300] transition-all duration-300 group cursor-pointer">
+        <div class="relative mb-4">
+          <img src="contentCreators/SwagBoyQ.webp" alt="SwagBoyQ" class="w-full h-64 object-cover rounded-2xl" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-2xl"></div>
+        </div>
+        <div class="text-center">
+          <h3 class="text-xl font-['Poppins'] text-gray-900 mb-3">SwagBoyQ</h3>
+          <div class="space-y-2 mb-4">
+            <div class="flex items-center justify-center space-x-2 text-gray-600">
+                <!-- TikTok Logo SVG (small, h-4 w-4) -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 293768 333327" class="h-4 w-4">
+                <path d="M204958 0c5369 45832 32829 78170 77253 81022v43471l-287 27V87593c-44424-2850-69965-30183-75333-76015l-47060-1v192819c6791 86790-60835 89368-86703 56462 30342 18977 79608 6642 73766-68039V0h58365zM78515 319644c-26591-5471-50770-21358-64969-44588-34496-56437-3401-148418 96651-157884v54345l-164 27v-40773C17274 145544 7961 245185 33650 286633c9906 15984 26169 27227 44864 33011z" fill="#26f4ee"/>
+                <path d="M218434 11587c3505 29920 15609 55386 35948 70259-27522-10602-43651-34934-47791-70262l11843 3zm63489 82463c3786 804 7734 1348 11844 1611v51530c-25770 2537-48321-5946-74600-21749l4034 88251c0 28460 106 41467-15166 67648-34260 58734-95927 63376-137628 35401 54529 22502 137077-4810 136916-103049v-96320c26279 15803 48830 24286 74600 21748V94050zm-171890 37247c5390-1122 11048-1985 16998-2548v54345c-21666 3569-35427 10222-41862 22528-20267 38754 5827 69491 35017 74111-33931 5638-73721-28750-49999-74111 6434-12304 18180-18959 39846-22528v-51797zm64479-119719h1808-1808z" fill="#fb2c53"/>
+                <path d="M206590 11578c5369 45832 30910 73164 75333 76015v51528c-25770 2539-48321-5945-74600-21748v96320c206 125717-135035 135283-173673 72939-25688-41449-16376-141089 76383-155862v52323c-21666 3569-33412 10224-39846 22528-39762 76035 98926 121273 89342-1225V11577l47060 1z"/>
+                </svg>
+              <span class="text-sm">@swagboyq</span>
+              <span class="text-sm font-medium">27.1M</span>
+            </div>
+            <div class="flex items-center justify-center space-x-2 text-gray-600">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9zm9.25 2.75a.75.75 0 1 1 0 1.5h-1.5a.75.75 0 0 1 0-1.5h1.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>
+              <span class="text-sm">@swagboyq</span>
+              <span class="text-sm font-medium">3.3M</span>
+            </div>
+          </div>
+          <div class="w-full h-1 bg-gray-200 rounded-full overflow-hidden">
+            <div class="h-full bg-gradient-to-r from-[#F4A300] to-[#ff8c00] w-full"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Continue cards for Jordan, Sophia, Marcus, Emma ... -->
+      <!-- (Repeat the same structure with their data/images) -->
+
+    </div>
+  </div>
+</section>
+
+<!--Brand Section-->
+<section id="brands" class="py-20 bg-[#F4A300] relative overflow-hidden">
+  <!-- Palm tree silhouette watermark -->
+  <div class="absolute inset-0 opacity-10">
+    <div class="absolute right-10 top-10 text-9xl">🌴</div>
+    <div class="absolute left-20 bottom-20 text-7xl rotate-12">🌴</div>
+    <div class="absolute right-1/3 bottom-10 text-6xl -rotate-12">🌴</div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-['Poppins'] text-white mb-4">
+        Brands We've Worked With
+      </h2>
+      <p class="text-xl text-white/90 max-w-2xl mx-auto font-['Poppins']">
+        Trusted by leading brands worldwide to create authentic connections
+      </p>
+    </div>
+
+    <!-- Brand Logos Grid -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 w-full">
+      
+      <!-- Brand Item -->
+      <div class="bg-white/20 backdrop-blur-sm rounded-3xl p-8 text-center hover:bg-white/30 
+                  transition-all duration-300 group cursor-pointer border border-white/30 
+                  h-40 flex items-center justify-center">
+        <img src="img/betr.png" alt="Brand 1" class="max-h-16 md:max-h-24 object-contain" />
+      </div>
+
+      <div class="bg-white/20 backdrop-blur-sm rounded-3xl p-8 text-center hover:bg-white/30 
+                  transition-all duration-300 group cursor-pointer border border-white/30 
+                  h-40 flex items-center justify-center">
+        <img src="img/capitol records.png" alt="Brand 2" class="max-h-16 md:max-h-24 object-contain" />
+      </div>
+
+      <div class="bg-white/20 backdrop-blur-sm rounded-3xl p-8 text-center hover:bg-white/30 
+                  transition-all duration-300 group cursor-pointer border border-white/30 
+                  h-40 flex items-center justify-center">
+        <img src="img/Kick.png" alt="Brand 3" class="max-h-16 md:max-h-24 object-contain" />
+      </div>
+
+      <div class="bg-white/20 backdrop-blur-sm rounded-3xl p-8 text-center hover:bg-white/30 
+                  transition-all duration-300 group cursor-pointer border border-white/30 
+                  h-40 flex items-center justify-center">
+        <img src="img/Linkme.png" alt="Brand 4" class="max-h-16 md:max-h-24 object-contain" />
+      </div>
+
+      <div class="bg-white/20 backdrop-blur-sm rounded-3xl p-8 text-center hover:bg-white/30 
+                  transition-all duration-300 group cursor-pointer border border-white/30 
+                  h-40 flex items-center justify-center">
+        <img src="img/MVP.png" alt="Brand 5" class="max-h-16 md:max-h-24 object-contain" />
+      </div>
+
+      <div class="bg-white/20 backdrop-blur-sm rounded-3xl p-8 text-center hover:bg-white/30 
+                  transition-all duration-300 group cursor-pointer border border-white/30 
+                  h-40 flex items-center justify-center">
+        <img src="img/Pump Fun.png" alt="Brand 6" class="max-h-16 md:max-h-24 object-contain" />
+      </div>
+
+      <div class="bg-white/20 backdrop-blur-sm rounded-3xl p-8 text-center hover:bg-white/30 
+                  transition-all duration-300 group cursor-pointer border border-white/30 
+                  h-40 flex items-center justify-center">
+        <img src="img/Rainbet.png" alt="Brand 7" class="max-h-16 md:max-h-24 object-contain" />
+      </div>
+
+      <div class="bg-white/20 backdrop-blur-sm rounded-3xl p-8 text-center hover:bg-white/30 
+                  transition-all duration-300 group cursor-pointer border border-white/30 
+                  h-40 flex items-center justify-center">
+        <img src="img/Republic Records.png" alt="Brand 8" class="max-h-16 md:max-h-24 object-contain" />
+      </div>
+      <div class="bg-white/20 backdrop-blur-sm rounded-3xl p-8 text-center hover:bg-white/30 
+                  transition-all duration-300 group cursor-pointer border border-white/30 
+                  h-40 flex items-center justify-center">
+        <img src="img/Stake.svg" alt="Brand 6" class="max-h-16 md:max-h-24 object-contain" />
+      </div>
+
+      <div class="bg-white/20 backdrop-blur-sm rounded-3xl p-8 text-center hover:bg-white/30 
+                  transition-all duration-300 group cursor-pointer border border-white/30 
+                  h-40 flex items-center justify-center">
+        <img src="img/W_LOGO_BLACK_NO_TRADEMARK.png" alt="Brand 7" class="max-h-16 md:max-h-24 object-contain" />
+      </div>
+
+      <div class="bg-white/20 backdrop-blur-sm rounded-3xl p-8 text-center hover:bg-white/30 
+                  transition-all duration-300 group cursor-pointer border border-white/30 
+                  h-40 flex items-center justify-center">
+        <img src="img/YSL Records.png" alt="Brand 8" class="max-h-16 md:max-h-24 object-contain" />
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--Services-->
+<section id="services" class="py-20 bg-gradient-to-br from-gray-50 to-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-['Poppins'] text-gray-900 mb-4">
+        Our Services
+      </h2>
+      <p class="text-xl text-gray-600 max-w-2xl mx-auto font-['Poppins']">
+        Comprehensive solutions for creators and brands to thrive in the digital landscape
+      </p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-16">
+      
+      <!-- For Talent -->
+      <div>
+        <div class="text-center mb-8">
+          <h3 class="text-3xl font-['Poppins'] text-gray-900 mb-2">For Talent</h3>
+          <div class="w-20 h-1 bg-[#F4A300] rounded-full mx-auto"></div>
+        </div>
+
+        <div class="space-y-6">
+          <!-- Sponsorships -->
+          <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition group">
+            <div class="flex items-start space-x-4">
+              <div class="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center bg-[#F4A300]/20">
+                <!-- Target Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-target h-6 w-6" aria-hidden="true" style="color: rgb(244, 163, 0);"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+              </div>
+              <div>
+                <h4 class="text-xl font-['Poppins'] text-gray-900 mb-2">Sponsorships</h4>
+                <p class="text-gray-600 font-['Poppins']">Connect with brands that align with your values and audience</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Career Management -->
+          <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition group">
+            <div class="flex items-start space-x-4">
+              <div class="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center bg-[#2B9CC9]/20">
+                <!-- TrendingUp Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up h-6 w-6" aria-hidden="true" style="color: rgb(43, 156, 201);"><path d="M16 7h6v6"></path><path d="m22 7-8.5 8.5-5-5L2 17"></path></svg>
+              </div>
+              <div>
+                <h4 class="text-xl font-['Poppins'] text-gray-900 mb-2">Career Management</h4>
+                <p class="text-gray-600 font-['Poppins']">Strategic guidance to elevate your personal brand and reach</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Placements -->
+          <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition group">
+            <div class="flex items-start space-x-4">
+              <div class="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center bg-[#10B981]/20">
+                <!-- MapPin Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin h-6 w-6" aria-hidden="true" style="color: rgb(16, 185, 129);"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div>
+                <h4 class="text-xl font-['Poppins'] text-gray-900 mb-2">Placements</h4>
+                <p class="text-gray-600 font-['Poppins']">Premium opportunities with leading brands and campaigns</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Relations -->
+          <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition group">
+            <div class="flex items-start space-x-4">
+              <div class="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center bg-[#8B5CF6]/20">
+                <!-- Handshake Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-handshake h-6 w-6" aria-hidden="true" style="color: rgb(139, 92, 246);"><path d="m11 17 2 2a1 1 0 1 0 3-3"></path><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"></path><path d="m21 3 1 11h-2"></path><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"></path><path d="M3 4h8"></path></svg>
+              </div>
+              <div>
+                <h4 class="text-xl font-['Poppins'] text-gray-900 mb-2">Relations</h4>
+                <p class="text-gray-600 font-['Poppins']">Build lasting partnerships with industry professionals</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- For Brands -->
+      <div>
+        <div class="text-center mb-8">
+          <h3 class="text-3xl font-['Poppins'] text-gray-900 mb-2">For Brands</h3>
+          <div class="w-20 h-1 bg-[#2B9CC9] rounded-full mx-auto"></div>
+        </div>
+
+        <div class="space-y-6">
+          <!-- Campaign Strategy -->
+          <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition group">
+            <div class="flex items-start space-x-4">
+              <div class="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center bg-[#F4A300]/20">
+                <!-- Lightbulb Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb h-6 w-6" aria-hidden="true" style="color: rgb(244, 163, 0);"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg>
+              </div>
+              <div>
+                <h4 class="text-xl font-['Poppins'] text-gray-900 mb-2">Campaign Strategy</h4>
+                <p class="text-gray-600 font-['Poppins']">Data-driven strategies that deliver measurable results</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Influencer Outreach -->
+          <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition group">
+            <div class="flex items-start space-x-4">
+              <div class="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center bg-[#2B9CC9]/20">
+                <!-- UserPlus Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-plus h-6 w-6" aria-hidden="true" style="color: rgb(43, 156, 201);"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><line x1="19" x2="19" y1="8" y2="14"></line><line x1="22" x2="16" y1="11" y2="11"></line></svg>
+              </div>
+              <div>
+                <h4 class="text-xl font-['Poppins'] text-gray-900 mb-2">Influencer Outreach</h4>
+                <p class="text-gray-600 font-['Poppins']">Connect with authentic creators who resonate with your brand</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Talent Placements -->
+          <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition group">
+            <div class="flex items-start space-x-4">
+              <div class="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center bg-[#10B981]/20">
+                <!-- Camera Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-camera h-6 w-6" aria-hidden="true" style="color: rgb(16, 185, 129);"><path d="M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z"></path><circle cx="12" cy="13" r="3"></circle></svg>
+              </div>
+              <div>
+                <h4 class="text-xl font-['Poppins'] text-gray-900 mb-2">Talent Placements</h4>
+                <p class="text-gray-600 font-['Poppins']">Perfect creator matches for your specific campaign needs</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Audience Insights -->
+          <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition group">
+            <div class="flex items-start space-x-4">
+              <div class="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center bg-[#8B5CF6]/20">
+                <!-- Users Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users h-6 w-6" aria-hidden="true" style="color: rgb(139, 92, 246);"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg>
+              </div>
+              <div>
+                <h4 class="text-xl font-['Poppins'] text-gray-900 mb-2">Audience Insights</h4>
+                <p class="text-gray-600 font-['Poppins']">Deep analytics to understand and reach your target market</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Custom shimmer animation -->
+  <style>
+    @keyframes shimmer {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+  </style>
+
+<!--About Us-->
+<section id="about" class="py-20 bg-white overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      
+      <!-- Content -->
+      <div class="opacity-0 animate-fade-in-left">
+        <h2 class="text-4xl md:text-5xl font-poppins text-gray-900 mb-6">
+          About Us
+        </h2>
+        <div class="w-20 h-1 bg-[#F4A300] rounded-full mb-8"></div>
+        
+        <p class="text-xl text-gray-600 mb-6 font-poppins leading-relaxed">
+          Oasis Talent Group is a global talent and influencer management agency helping creators and brands connect in meaningful ways.
+        </p>
+        
+        <p class="text-lg text-gray-600 mb-8 font-poppins leading-relaxed">
+          We believe in the power of authentic storytelling and genuine connections. Our mission is to create opportunities where creativity meets commerce, where talented individuals can build sustainable careers, and where brands can connect with their audiences through genuine partnerships.
+        </p>
+
+        <div class="grid grid-cols-2 gap-8 mb-8">
+          <div class="text-center">
+            <div class="flex justify-center mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe h-8 w-8 text-[#F4A300]" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+            </div>
+            <div class="text-sm text-gray-600">Global Reach</div>
+          </div>
+          <div class="text-center">
+            <div class="flex justify-center mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-handshake h-8 w-8 text-[#2B9CC9]" aria-hidden="true"><path d="m11 17 2 2a1 1 0 1 0 3-3"></path><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"></path><path d="m21 3 1 11h-2"></path><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"></path><path d="M3 4h8"></path></svg>
+            </div>
+            <div class="text-sm text-gray-600">Authentic Partnerships</div>
+          </div>
+          <div class="text-center">
+            <div class="flex justify-center mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up h-8 w-8 text-[#10B981]" aria-hidden="true"><path d="M16 7h6v6"></path><path d="m22 7-8.5 8.5-5-5L2 17"></path></svg>
+            </div>
+            <div class="text-sm text-gray-600">Data-Driven Results</div>
+          </div>
+          <div class="text-center">
+            <div class="flex justify-center mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-target h-8 w-8 text-[#8B5CF6]" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+            </div>
+            <div class="text-sm text-gray-600">Strategic Focus</div>
+          </div>
+        </div>
+
+        <div class="flex space-x-4">
+          <div class="bg-[#F4A300]/10 px-4 py-2 rounded-full">
+            <span class="text-[#F4A300] font-medium">Innovation</span>
+          </div>
+          <div class="bg-[#2B9CC9]/10 px-4 py-2 rounded-full">
+            <span class="text-[#2B9CC9] font-medium">Authenticity</span>
+          </div>
+          <div class="bg-[#10B981]/10 px-4 py-2 rounded-full">
+            <span class="text-[#10B981] font-medium">Growth</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="relative opacity-0 animate-fade-in-right">
+        <div class="relative">
+          <img 
+            src="https://images.unsplash.com/photo-1568031398663-7a9f7f2308ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiZWFjaCUyMHN1bnNldCUyMHBhbG0lMjB0cmVlcyUyMGhvcml6b258ZW58MXx8fHwxNzU4NjYwMzAyfDA&ixlib=rb-4.1.0&q=80&w=1080" 
+            alt="Beach sunrise representing our vision"
+            class="w-full h-96 object-cover rounded-3xl shadow-2xl"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-[#F4A300]/20 to-transparent rounded-3xl"></div>
+
+          <!-- Floating Elements -->
+          <div class="absolute -top-4 -right-4 w-20 h-20 bg-[#F4A300] rounded-full flex items-center justify-center text-white shadow-lg animate-palm">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tree-palm h-8 w-8" aria-hidden="true"><path d="M13 8c0-2.76-2.46-5-5.5-5S2 5.24 2 8h2l1-1 1 1h4"></path><path d="M13 7.14A5.82 5.82 0 0 1 16.5 6c3.04 0 5.5 2.24 5.5 5h-3l-1-1-1 1h-3"></path><path d="M5.89 9.71c-2.15 2.15-2.3 5.47-.35 7.43l4.24-4.25.7-.7.71-.71 2.12-2.12c-1.95-1.96-5.27-1.8-7.42.35"></path><path d="M11 15.5c.5 2.5-.17 4.5-1 6.5h4c2-5.5-.5-12-1-14"></path></svg>
+          </div>
+          
+          
+           <div class="absolute -bottom-4 -left-4 w-16 h-16 bg-[#2B9CC9] rounded-full flex items-center justify-center text-white shadow-lg animate-waves">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-waves h-6 w-6" aria-hidden="true"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path></svg>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Tailwind Custom Animations -->
+<style>
+  @layer utilities {
+    /* Fade in */
+    .animate-fade-in-left {
+      @apply opacity-0 translate-x-[-50px];
+      animation: fadeInLeft 0.8s forwards;
+    }
+    .animate-fade-in-right {
+      @apply opacity-0 translate-x-[50px];
+      animation: fadeInRight 0.8s forwards;
+    }
+
+    @keyframes fadeInLeft {
+      to { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes fadeInRight {
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    /* Floating / spinning palm tree */
+      .animate-palm {
+    animation: palmSpinScale 20s linear infinite;
+    transform-origin: center;
+  }
+  .animate-waves {
+    animation: waveBounceRotate 3s ease-in-out infinite;
+  }
+
+  @keyframes waveBounceRotate {
+    0%   { transform: translateY(0) rotate(0deg); }
+    25%  { transform: translateY(-5px) rotate(10deg); }
+    50%  { transform: translateY(-10px) rotate(-10deg); }
+    75%  { transform: translateY(-5px) rotate(10deg); }
+    100% { transform: translateY(0) rotate(0deg); }
+  }
+    @keyframes palmRotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes palmScale {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+     @keyframes palmSpinScale {
+    0%   { transform: rotate(0deg) scale(1); }
+    25%  { transform: rotate(90deg) scale(1.05); }
+    50%  { transform: rotate(180deg) scale(1.1); }
+    75%  { transform: rotate(270deg) scale(1.05); }
+    100% { transform: rotate(360deg) scale(1); }
+  }
+
+    /* Floating / bouncing waves */
+    .animate-waves {
+      animation: waveBounce 3s ease-in-out infinite, waveRotate 3s ease-in-out infinite;
+    }
+    @keyframes waveBounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes waveRotate {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(10deg); }
+      50% { transform: rotate(-10deg); }
+      75% { transform: rotate(10deg); }
+      100% { transform: rotate(0deg); }
+    }
+  }
+</style>
+
+<section class="relative py-32 overflow-hidden">
+  <!-- Background Image -->
+  <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" 
+       style="background-image: url('https://images.unsplash.com/photo-1568031398663-7a9f7f2308ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiZWFjaCUyMHN1bnNldCUyMHBhbG0lMjB0cmVlcyUyMGhvcml6b258ZW58MXx8fHwxNzU4NjYwMzAyfDA&ixlib=rb-4.1.0&q=80&w=1080');"></div>
+
+  <!-- Gradient Overlay -->
+  <div class="absolute inset-0 bg-gradient-to-r from-[#F4A300]/90 via-[#ff8c00]/80 to-[#F4A300]/90"></div>
+
+  <!-- Animated particles -->
+  <div class="absolute inset-0">
+    <!-- Example 20 particles -->
+    <div class="absolute w-2 h-2 bg-white/30 rounded-full animate-particle" style="left: 10%; top: 20%; animation-delay: 0s;"></div>
+    <div class="absolute w-2 h-2 bg-white/30 rounded-full animate-particle" style="left: 50%; top: 30%; animation-delay: 0.5s;"></div>
+    <div class="absolute w-2 h-2 bg-white/30 rounded-full animate-particle" style="left: 80%; top: 60%; animation-delay: 1s;"></div>
+    <!-- Add more divs as needed -->
+  </div>
+
+  <div class="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+    <!-- Sparkles Icon -->
+    <div class="mb-8 animate-rotate-wobble mx-auto w-16 h-16">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles h-16 w-16 text-white mx-auto" aria-hidden="true"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg>
+    </div>
+
+    <!-- Heading -->
+    <h2 class="text-5xl md:text-7xl font-poppins text-white mb-8 leading-tight">
+      Let's Build Something
+      <span class="block text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-yellow-100 animate-gradient">
+        Extraordinary
+      </span>
+    </h2>
+
+    <p class="text-xl md:text-2xl text-white/90 mb-12 max-w-2xl mx-auto font-poppins animate-fade-in-up">
+      Ready to turn your creative vision into reality? Join the Oasis family and unlock unlimited possibilities.
+    </p>
+
+    <!-- Button -->
+    <a href="https://cal.com/oasistalentgroup/introductioncall"><button class="inline-flex items-center justify-center bg-white text-[#F4A300] hover:bg-gray-100 text-xl px-16 py-4 rounded-full font-poppins shadow-2xl hover:shadow-3xl transform transition-all duration-300 hover:scale-105">
+  Apply Now
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-3 h-6 w-6 transition-transform duration-300 group-hover:translate-x-2" aria-hidden="true">
+    <path d="M5 12h14"></path>
+    <path d="m12 5 7 7-7 7"></path>
+  </svg>
+</button></a>
+
+
+    <!-- Floating Icons -->
+    <div class="absolute top-20 left-10 w-10 h-10 bg-transparent animate-palm-rotate">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tree-palm h-10 w-10 text-white/70" aria-hidden="true"><path d="M13 8c0-2.76-2.46-5-5.5-5S2 5.24 2 8h2l1-1 1 1h4"></path><path d="M13 7.14A5.82 5.82 0 0 1 16.5 6c3.04 0 5.5 2.24 5.5 5h-3l-1-1-1 1h-3"></path><path d="M5.89 9.71c-2.15 2.15-2.3 5.47-.35 7.43l4.24-4.25.7-.7.71-.71 2.12-2.12c-1.95-1.96-5.27-1.8-7.42.35"></path><path d="M11 15.5c.5 2.5-.17 4.5-1 6.5h4c2-5.5-.5-12-1-14"></path></svg>
+    </div>
+
+    <div class="absolute top-32 right-20 w-8 h-8 animate-sun-float">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun h-8 w-8 text-yellow-200" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
+    </div>
+
+    <div class="absolute bottom-20 left-1/4 w-8 h-8 animate-waves-float">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-waves h-8 w-8 text-blue-200" aria-hidden="true"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path></svg>
+    </div>
+  </div>
+</section>
+
+<!-- Tailwind Custom Animations -->
+<style>
+  @layer utilities {
+    /* Particles animation */
+    .animate-particle {
+      animation: particleAnim 3s ease-in-out infinite;
+    }
+    @keyframes particleAnim {
+      0%, 100% { transform: translateY(0) scale(1); opacity: 0.3; }
+      50% { transform: translateY(-20px) scale(1.2); opacity: 0.8; }
+    }
+
+    /* Sparkles rotation wobble */
+    .animate-rotate-wobble {
+      animation: rotateWobble 2s ease-in-out infinite;
+    }
+    @keyframes rotateWobble {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(5deg); }
+      50% { transform: rotate(-5deg); }
+      75% { transform: rotate(5deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    /* Gradient text animation */
+    .animate-gradient {
+      background-size: 200% 200%;
+      animation: gradientShift 3s linear infinite;
+    }
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Fade-in up */
+    .animate-fade-in-up {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeUp 0.8s forwards;
+    }
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Palm rotate & float */
+    .animate-palm-rotate {
+      animation: palmSpinScale 20s linear infinite;
+      transform-origin: center;
+    }
+    @keyframes palmSpinScale {
+      0% { transform: rotate(0deg) scale(1); }
+      25% { transform: rotate(90deg) scale(1.05); }
+      50% { transform: rotate(180deg) scale(1.1); }
+      75% { transform: rotate(270deg) scale(1.05); }
+      100% { transform: rotate(360deg) scale(1); }
+    }
+
+    /* Sun float */
+    .animate-sun-float {
+      animation: sunFloat 4s ease-in-out infinite;
+    }
+    @keyframes sunFloat {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-15px) rotate(-360deg); }
+    }
+
+    /* Waves float & rotate */
+    .animate-waves-float {
+      animation: wavesFloat 8s linear infinite;
+    }
+    @keyframes wavesFloat {
+      0% { transform: scale(1) rotate(0deg); }
+      25% { transform: scale(1.2) rotate(90deg); }
+      50% { transform: scale(1) rotate(180deg); }
+      75% { transform: scale(1.2) rotate(270deg); }
+      100% { transform: scale(1) rotate(360deg); }
+    }
+  }
+</style>
+
+
+
+  <!-- Footer -->
+  <footer class="bg-[#3C2F2F] text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Logo + Description -->
+        <div class="lg:col-span-2">
+          <!-- Logo -->
+            <div class="flex items-center">
+            <img src="img/Oasis.png" alt="Oasis Talent Group" class="h-[60px] w-[60px] rounded-full">
+            </div>
+
+          <p class="text-gray-300 mb-6 max-w-md leading-relaxed">
+            Connecting extraordinary talent with visionary brands to create authentic partnerships that drive meaningful engagement and sustainable growth.
+          </p>
+          <div class="flex space-x-4">
+            <!-- Instagram -->
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#2B9CC9] transition">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram h-5 w-5 text-white group-hover:scale-110 transition-transform" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>            </a>
+            <!-- Twitter -->
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#2B9CC9] transition">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter h-5 w-5 text-white group-hover:scale-110 transition-transform" aria-hidden="true"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+            </a>
+            <!-- YouTube -->
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#2B9CC9] transition">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube h-5 w-5 text-white group-hover:scale-110 transition-transform" aria-hidden="true"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg>
+            <!-- LinkedIn -->
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#2B9CC9] transition">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin h-5 w-5 text-white group-hover:scale-110 transition-transform" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div>
+          <h3 class="text-lg mb-6">Quick Links</h3>
+          <ul class="space-y-3">
+            <li><a href="#home" class="text-gray-300 hover:text-[#2B9CC9]">Home</a></li>
+            <li><a href="#creators" class="text-gray-300 hover:text-[#2B9CC9]">Creators</a></li>
+            <li><a href="#brands" class="text-gray-300 hover:text-[#2B9CC9]">Brands</a></li>
+            <li><a href="#services" class="text-gray-300 hover:text-[#2B9CC9]">Services</a></li>
+            <li><a href="#about" class="text-gray-300 hover:text-[#2B9CC9]">About Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h3 class="text-lg mb-6">Contact Info</h3>
+          <ul class="space-y-4">
+            <li class="flex items-center space-x-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail h-5 w-5 text-[#F4A300] flex-shrink-0" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>              <span class="text-gray-300">hello@oasistalent.com</span>
+            </li>
+            <li class="flex items-center space-x-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-5 w-5 text-[#F4A300] flex-shrink-0" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>              <span class="text-gray-300">+1 (555) 123-4567</span>
+            </li>
+            <li class="flex items-center space-x-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin h-5 w-5 text-[#F4A300] flex-shrink-0" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>              <span class="text-gray-300">Los Angeles, California</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Section -->
+      <div class="border-t border-gray-600 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <div class="text-gray-400 text-sm mb-4 md:mb-0">
+          © 2025 Oasis Talent Group. All rights reserved.
+        </div>
+        <div class="flex space-x-6 text-sm">
+          <a href="#" class="text-gray-400 hover:text-[#2B9CC9]">Privacy Policy</a>
+          <a href="#" class="text-gray-400 hover:text-[#2B9CC9]">Terms of Service</a>
+          <a href="#" class="text-gray-400 hover:text-[#2B9CC9]">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+    <div class="h-1 bg-gradient-to-r from-[#F4A300] via-[#2B9CC9] to-[#F4A300]"></div>
+  </footer>
+
+  <script>
+    // simple mobile toggle
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+    const openIcon = document.getElementById('menu-open');
+    const closeIcon = document.getElementById('menu-close');
+
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+      openIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
