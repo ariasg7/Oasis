@@ -1171,11 +1171,15 @@
       closeIcon.classList.toggle('hidden');
     });
   </script>
-  <script>
-  // If URL contains a hash when loading, remove it and reload clean
-  if (window.location.hash) {
-    window.history.replaceState(null, null, window.location.pathname);
-  }
+ <script>
+  // On page load, remove hash and scroll to top
+  window.addEventListener("load", function () {
+    if (window.location.hash) {
+      history.replaceState(null, null, window.location.pathname); 
+      window.scrollTo({ top: 0, behavior: "instant" }); // jump to top
+    }
+  });
 </script>
+
 </body>
 </html>
