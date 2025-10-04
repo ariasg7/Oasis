@@ -808,12 +808,24 @@
   });
 </script>
 <style>
-  .carousel-image {
+.carousel-image {
   width: 100%;
-  height: auto; /* maintain aspect ratio */
-  max-height: 250px; /* bigger images */
-  object-fit: contain; /* prevents distortion */
-  border-radius: 12px; /* optional rounded edges */
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+/* Bigger images on mobile */
+@media (max-width: 768px) {
+  .carousel-image {
+    max-height: 300px; /* bigger on mobile */
+  }
+}
+
+@media (min-width: 769px) {
+  .carousel-image {
+    max-height: 250px; /* default for desktop */
+  }
 }
 
 .swiper-slide {
