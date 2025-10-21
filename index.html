@@ -159,11 +159,11 @@
     </div>
 
     <!-- Grid Layout -->
-    <div class="grid grid-cols-5 grid-rows-4 gap-4 h-[800px]">
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-4 min-h-[800px] md:min-h-auto">
 
       <!-- Talent Management (Single Large Card with Orange Hover Effect) -->
       <div
-        class="col-span-5 md:col-span-2 row-span-2 relative overflow-hidden rounded-2xl border-4 border-[#F4A300] bg-gradient-to-br from-[#F4A300] to-[#ff8c00] cursor-pointer group transition-all duration-500 hover:shadow-[0_0_25px_#F4A300] hover:scale-[1.02]"
+        class="col-span-5 md:col-span-2 md:row-span-2 relative overflow-hidden rounded-2xl border-4 border-[#F4A300] bg-gradient-to-br from-[#F4A300] to-[#ff8c00] cursor-pointer group transition-all duration-500 hover:shadow-[0_0_25px_#F4A300] hover:scale-[1.02] "
       >
         <div class="absolute top-6 left-6 z-10">
           <span class="bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full text-sm text-gray-900">
@@ -208,7 +208,7 @@
 
       <!-- Podcast Network (Top Right) -->
       <div
-        class="col-span-5 md:col-span-3 row-span-2 relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#2B9CC9] to-[#1a7a9e] cursor-pointer group transition-all duration-500 hover:shadow-[0_0_25px_#2B9CC9] hover:scale-[1.02]"
+        class="col-span-5 md:col-span-3 md:row-span-2 relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#2B9CC9] to-[#1a7a9e] cursor-pointer group transition-all duration-500 hover:shadow-[0_0_25px_#2B9CC9] hover:scale-[1.02]"
       >
         <div class="absolute top-6 left-6 z-10">
           <span class="bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full text-sm text-gray-900">
@@ -876,7 +876,42 @@
       </button>
     </div>
   </div>
+
+  <!-- Form Modal -->
+<div id="creators-modal" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50">
+  <div class="bg-white rounded-2xl w-full max-w-lg p-8 relative">
+    <!-- Close Button -->
+    <button id="close-modal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800">
+      &times;
+    </button>
+
+    <h3 class="text-2xl font-semibold mb-4">Sign Up to Connect</h3>
+
+    <form class="space-y-4">
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Name</label>
+        <input type="text" required class="mt-1 w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-[#F4A300]" />
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Email</label>
+        <input type="email" required class="mt-1 w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-[#F4A300]" />
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Message</label>
+        <textarea required class="mt-1 w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-[#F4A300]" rows="4"></textarea>
+      </div>
+
+      <button type="submit" class="bg-[#F4A300] text-white px-6 py-2 rounded-xl w-full hover:bg-[#d68c00] transition">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
+
 </section>
+<!--
 <script>
   const creatorsGrid = document.getElementById('creators-grid');
   const toggleCreatorsBtn = document.getElementById('toggle-creators');
@@ -898,7 +933,31 @@
       document.getElementById('creators').scrollIntoView({ behavior: 'smooth' });
     }
   });
+</script> -->
+<script>
+  const toggleCreatorsBtn = document.getElementById('toggle-creators');
+  const creatorsModal = document.getElementById('creators-modal');
+  const closeModalBtn = document.getElementById('close-modal');
+
+  toggleCreatorsBtn.addEventListener('click', () => {
+    creatorsModal.classList.remove('hidden');
+    creatorsModal.classList.add('flex'); // show modal as flex
+  });
+
+  closeModalBtn.addEventListener('click', () => {
+    creatorsModal.classList.add('hidden');
+    creatorsModal.classList.remove('flex');
+  });
+
+  // Close modal when clicking outside the form container
+  creatorsModal.addEventListener('click', (e) => {
+    if (e.target === creatorsModal) {
+      creatorsModal.classList.add('hidden');
+      creatorsModal.classList.remove('flex');
+    }
+  });
 </script>
+
 
 
 
